@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Audio"
+    >
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true">
+
+      <Button
+          android:id="@+id/btn1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="play music"
+       />
+
+      <Button
+          android:id="@+id/btn2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/btn1"
+          android:text="pause music"
+         />
+
+
+
+
+  </RelativeLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbar"
+        android:layout_marginTop="20dp"
+        />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Volume Bar"
+       android:textStyle="bold"
+       android:layout_below="@+id/seekbar"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeline"
+        android:layout_below="@+id/seekbar"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Line"
+        android:textStyle="bold"
+        android:layout_below="@+id/timeline"/>
+
+
+
+
+</RelativeLayout>
